@@ -17,6 +17,11 @@ The notes read:
   4. (35 points) "Tell your friends" button action using javascript.
   5. (50 points) More attractive.
 
+## Contribute
+1. [Fork](https://github.com/edwinlab/medictrust-frontend-test) the project.
+2. Make a new branch.
+3. Perform a pull request in github's web interface.
+
 # Be resourceful!
 
 Use the net. Use the mailing list. Use StackOverflow. Whatever you want.
