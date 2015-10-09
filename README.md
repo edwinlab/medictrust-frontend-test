@@ -1,0 +1,24 @@
+# Funding Page - Frontend Test v0.1
+
+Welcome to the **MedicTrust** challenge!
+
+## Late one Friday at the office...
+
+You're a frontend developer on a new MedicTrust project. Your CEO want a new funding page. The Project Manager hands you some notes from the Project Planning Meeting where the details of the page were (sort of) ironed out. When you look at the notes you think (quietly, to yourself, of course):
+
+**You:**
+> Hm, this specification is more than a little vague and weird in spots.
+
+The notes read:
+
+  1. (25 points) Create a page like a image using html and css.
+  2. (10 points) Top up text at progress bar.
+  3. (35 points) "Save to later" button action using javascript.
+  4. (35 points) "Tell your friends" button action using javascript.
+  5. (50 points) More attractive.
+
+# Be resourceful!
+
+Use the net. Use the mailing list. Use StackOverflow. Whatever you want.
+
+**Good luck!**
