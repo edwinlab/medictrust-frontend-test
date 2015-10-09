@@ -1,4 +1,4 @@
-# Funding Page - Frontend Test v1.0
+# Funding Page - Frontend Test v1.1
 
 ##You're a frontend developer for a new MedicTrust project.
 
