@@ -13,8 +13,8 @@ The notes read:
 
   1. (25 points) Create a page like a image using html and css.
   2. (10 points) Top up text at progress bar.
-  3. (35 points) "Save to later" button action using javascript.
-  4. (35 points) "Tell your friends" button action using javascript.
+  3. (35 points) "Save to later" button action using javascript (Redirect/Move to Save page).
+  4. (35 points) "Tell your friends" button action using javascript (Modal box or whatever you want).
   5. (50 points) More attractive.
 
 ## Contribute
