@@ -1,4 +1,4 @@
-# Funding Page - Frontend Test v0.1
+# Funding Page - Frontend Test v1.1
 
 Welcome to the **MedicTrust** challenge!
 
