@@ -1,10 +1,8 @@
 # Funding Page - Frontend Test v1.1
 
-Welcome to the **MedicTrust** challenge!
+##You're a frontend developer for a new MedicTrust project.
 
-## Late one Friday at the office...
-
-You're a frontend developer on a new MedicTrust project. Your CEO want a new funding page. The Project Manager hands you some notes from the Project Planning Meeting where the details of the page were (sort of) ironed out. When you look at the notes you think (quietly, to yourself, of course):
+Our CEO wants a new funding page. The project manager hands you some notes from the Project Planning Meeting where the details of the page were (sort of) ironed out. When you look at the notes you think (quietly, to yourself, of course):
 
 **You:**
 > Hm, this specification is more than a little vague and weird in spots.
