@@ -1,0 +1,224 @@
+<html>
+<head>
+	<title>MedicTrust Frontend Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style>
+		/* Global resets */
+		* {box-sizing: border-box; margin: 0; padding: 0;}
+		body {font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; color: #424242; line-height: 1.4;}
+
+		/* Fonts */
+		h1 {
+			font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+			font-size: 2.5em;
+			font-weight: bold;
+		}
+
+		.container {
+			margin: 2em auto;
+			max-width: 630px;
+			text-align: center;
+		}
+
+		  /* COLORS: 
+		  blue: #20A1D4;
+		  green: #1CBC2C;
+		  orange: #EF5F3C;
+		  black: #424242;
+		  grey: #777;
+		  light grey: #eaeaea;
+		  */
+		
+
+		body {
+			font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+			font-size: 1em;			
+		}
+		.arrow-progress-bar {
+			background-color: orange;
+			height: 50px;
+			width: 0%;
+			border-radius: 5%;
+		}
+		.target-progress-bar {
+			font-size: 1.5em;
+			font-color: blue;
+		}
+		.progress-bar {
+			margin: 1em 1em;
+		}
+		.progress-description {
+			margin: 1em 1em;	
+		}
+		.modal-box {
+			width: 50%;
+			height: auto;
+			background-color: red;
+			position: fixed;
+			margin: 0 auto;
+			bottom: 0%;
+			text-align: center;
+			padding: 1em 1em;
+			padding-top: 2em;
+		}
+		.close-box {
+			position: absolute;
+			top: 0%;
+			margin: auto 0.75em;
+			right: 0%;
+			font-weight: bold;
+			font-size: 1.5em;
+			cursor: pointer;
+		}
+		input {
+			font-weight: bold;
+			font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+			background-color: orange;
+			margin: 1em auto;
+		}
+		input:hover {
+			background-color: orangered;
+		}
+		input,
+		.close-box,
+		.target-progress-bar {
+			cursor: pointer;
+		}
+
+		@-webkit-keyframes progresstrack {
+		    0% {
+		        width: 0%;
+		    }
+		    100% {
+		        width: 100%;
+		    }
+		}
+		@-moz-keyframes progresstrack {
+		    0% {
+		        width: 0%;
+		    }
+		    100% {
+		        width: 100%;
+		    }
+		}
+		
+		@-webkit-keyframes popup {
+		    0% {
+		        bottom: -100%;
+		    }
+		    100% {
+		        bottom: 0%;
+		    }
+		}
+		@-moz-keyframes popup {
+		    0% {
+		        bottom: -100%;
+		    }
+		    100% {
+		        bottom: 0%;
+		    }
+		}
+		
+		/* Desktop */
+		@media only screen and (min-width: 500px) {
+			body {
+		    	background-color: lightgreen;
+			}
+			#content {
+				border-bottom-right-radius: 50%;
+				border-bottom-left-radius: 50%;
+				padding: 1em 1em;
+				background-color: white;
+			}
+			input {
+				width: 100px;
+				height: 50px;
+				border-radius: 10%;
+				font-size: 1.5em;
+			}
+			.modal-box {
+				background-color: lightblue;
+			}	
+		}
+
+		/* Mobile */
+		@media only screen and (max-width: 500px) {
+			body {
+		    	background-color: lightblue;
+			}
+			#content {
+				border-top: 5px solid black;
+				border-bottom: 5px solid black;
+				padding: 1em 1em;
+				background-color: white;
+			}
+			input {
+				width: 100%;
+				height: 50px;				
+			}
+			.modal-box {
+				width: 100%;
+				background-color: lightgreen;
+			}
+		}
+	</style>
+
+</head>
+<body onload="showModalBox()">
+	<div class="container">
+		<div class="progress-description"> 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus eligendi magnam sapiente perspiciatis, tenetur ad dolorum excepturi. Obcaecati minima delectus inventore omnis ratione labore. 
+		</div>
+		<div class="progress-bar">
+			<div class="arrow-progress-bar" >  </div>
+			<div class="target-progress-bar" onclick="peekprogress()"> CHECK! </div>
+		</div>
+		<div id="content">
+			<p>Ad provident aliquid, error exercitationem nostrum maxime voluptas delectus debitis rerum totam earum quae pariatur blanditiis odio unde laboriosam excepturi quia eligendi esse perferendis autem, molestiae explicabo velit. Veniam, libero.</p>
+			<form action="#savepage">
+		    	<input type="submit" value="Save">
+			</form>
+		</div>
+	</div>
+	<div class="modal-box">
+		<div class="close-box" onclick="closeBox()">
+			x
+		</div>
+		<div class="social-description">
+			<p>Culpa fugit, in iusto illum fugiat maxime suscipit iste porro voluptates nobis libero modi qui at soluta dolores aperiam nesciunt vel quaerat sequi debitis maiores labore, veritatis. Vitae, quidem, ipsam!</p>
+			<form action="#tellsocial">
+		    	<input type="submit" value="Share">
+			</form>
+		</div>
+	</div>
+	<script>
+		var value = 70;
+		var progressbar = document.getElementsByClassName("arrow-progress-bar")[0];
+		var targetprogressbar = document.getElementsByClassName("target-progress-bar")[0];
+		var modalbox = document.getElementsByClassName("modal-box")[0];
+		function peekprogress(){
+			progressbar.style.animation = "progresstrack 2s";
+			setTimeout( function(){progressbar.style.width = "70%"; targetprogressbar.innerHTML = value+"%"},2000);
+
+		}
+		function generateBackgroundColor(){
+			var r = Math.ceil(Math.random()*255);
+			var g = Math.ceil(Math.random()*255);
+			var b = Math.ceil(Math.random()*255);
+			modalbox.style.background = 'rgba('+r+','+g+','+b+',1)';
+		}
+		function showModalBox(){
+			modalbox.style.animation = 'popup 2s';
+			if(document.cookie == 1) 
+				modalbox.style.display = "none";
+		}
+		function closeBox(){
+			modalbox.style.display = "none";
+			var date = new Date();
+			date.setTime(date.getTime()+(30*1000));
+		   	var expiresTime = date.toGMTString();
+			document.cookie = "1; expires="+expiresTime;
+		}
+	</script>
+</body>
+</html>
