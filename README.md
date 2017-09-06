@@ -1,6 +1,6 @@
 # Funding Page - Frontend Test v1.1
 
-##You're a frontend developer for a new MedicTrust project.
+## You're a frontend developer for a new MedicTrust project.
 
 Our CEO wants a new funding page. The project manager hands you some notes from the Project Planning Meeting where the details of the page were (sort of) ironed out. When you look at the notes you think (quietly, to yourself, of course):
 
